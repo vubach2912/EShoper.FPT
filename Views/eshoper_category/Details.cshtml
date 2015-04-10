@@ -1,0 +1,34 @@
+﻿@model EShoper.FPT.Models.eshoper_category
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>eshoper_category</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryImgID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryImgID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.categoryID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

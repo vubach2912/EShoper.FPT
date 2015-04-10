@@ -1,0 +1,45 @@
+﻿@model IEnumerable<EShoper.FPT.Models.eshoper_rates>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.eshoper_product.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eshoper_users.userName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rate_number)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.eshoper_product.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eshoper_users.userName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rate_number)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.rate_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.rate_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.rate_id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,74 @@
+﻿@model EShoper.FPT.Models.eshoper_users
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>eshoper_users</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userPwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userPwd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user_phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user_phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user_Add1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user_Add1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user_Add2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user_Add2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user_City)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.userId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
